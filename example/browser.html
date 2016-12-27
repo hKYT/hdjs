@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <script src="../hdjs/hdjs.min.js"></script>
+
+	</head>
+	<body>
+	<p style="font-size: 40px;"></p>
+		<script type="text/javascript">
+			var browser = new HDjs.Browser();
+			if(browser.isMobileBrowser()) {
+				$("p").append("MobileBrowser <br>");
+			} else {
+				$("p").append("It isn't MobileBrowser<br>");
+			};
+			if(browser.isWeixinBrowser()) {
+				$("p").append("weixinBrowser");
+
+			} else {
+				$("p").append("It isn't weixinBrowser");
+			};
+		</script>
+	</body>
+</html>

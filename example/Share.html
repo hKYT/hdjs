@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>微信分享</title>
+</head>
+<body>
+</body>
+     <script src="./jweixin-1.0.0.js"></script>
+	 <script src="../hdjs/HDjs.min.js?v1"></script>
+<script>
+  console.log(Date.now())
+  var data={timeline: {
+            'title': "我是朋友圈标题"
+        },
+        appmessage: {
+            'title':  "我是微信好友标题",
+            'desc':  "我是微信好友说明文字"
+        },
+        global: {
+            'img_url': "http://cdn.joboto-public.jobtong.com/efc94893e30724b0ab37afd08dd17a5771ced602.png",
+            'link': "网页链接.html"
+        }
+      };
+    
+      
+  var share= new HDjs.Share('http://www.gimc.cn/weixin/jssdk/sample.php',data);
+	share.timeline.title= "改了的timelineTitle";
+	share.appmessage.title= "timelinetimeline";
+	share.timeline.img_url= "http://cdn.joboto-public.jobtong.com/efc94893e30724b0ab37afd08dd17a5771ced602.png";
+	share.appmessage.desc= "descdesc";
+	share.appmessage.success=function(){
+	  alert('分享成功');
+	}
+
+    
+</script>
+
+</html>
+
+<!--   分享的标题和详情等资料,有几种方法 。代码越往下，优先级越高：
+	1 可通过meta设置：
+    <meta name="wxm:timeline_title" content="分享到朋友圈的标题">
+    <meta name="wxm:appmessage_title" content="分享给好友的标题">
+    <meta name="wxm:appmessage_desc" content="分享给好友的详情">
+    <meta name="wxm:img_url" content="http://wximg.qq.com/tmt/_demo/wxmoment/img/thumb.jpg">
+    <meta name="wxm:link" content="https://wximg.qq.com/tmt/_demo/wxmoment/share.html">  
+    <script src="./jweixin-1.0.0.js"></script>
+    <script src="../build/HDjs.min.js?v1"></script>
+	<script>new HDjs.Share('http://www.gimc.cn/weixin/jssdk/sample.php');</script>
+    2 可通过实例化对象传参设置：
+     var data={timeline: {
+            'title': "我是标题timeline"
+        },
+        appmessage: {
+            'title':  "我是标题",
+            'desc':  "我是说明文字"
+        },
+        global: {
+            'img_url': "http://cdn.joboto-public.jobtong.com/efc94893e30724b0ab37afd08dd17a5771ced602.png",
+            'link': "什么鬼链接，木有啊"
+        }
+      };
+  	new HDjs.Share('http://www.gimc.cn/weixin/jssdk/sample.php',data);
+  	
+  	3 （！！推荐）可通过设置属性参数，如不同情况出现不同的分享标题和说明时使用：
+  	var share= new HDjs.Share('http://www.gimc.cn/weixin/jssdk/sample.php',data);
+	share.timeline.title= "改了的timeline";
+	share.appmessage.title= "timelinetimeline";
+	share.timeline.img_url= "http://cdn.joboto-public.jobtong.com/efc94893e30724b0ab37afd08dd17a5771ced602.png";
+	share.appmessage.desc= "descdesc";
+	share.appmessage.success=function(){
+	  alert('分享成功');
+	}
+    
+</html>
+-->

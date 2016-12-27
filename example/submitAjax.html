@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Submit</title>
+		<script src="../hdjs/hdjs.min.js"></script>
+	</head>
+
+	<body>
+	</body>
+	<script>
+		var mydata = new Object();
+		mydata.url = './index.php?m=Home&c=Game&a=yuyue';
+		mydata.data = {
+			name: "问",
+			age: 1
+		};
+		mydata.succeed = function() {
+			console.log("cccccccc")
+		}
+
+		HDjs.Ajax(mydata);
+
+		//(myUrl,mySuccess,mydata,mytype,tips,other)
+		//HDjs.Submit(mydata.url, mydata.succeed, mydata.data)
+	</script>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>scr\data\typeEnlarge.js - HDjs</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://github.com/tina0152/HDjs/">
+             
+            <img alt="HDjs" src="../assets/css/logo.png" title="HDjs">
+            
+                HDjs
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="Search for API" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>Modules/Classes</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to filter Modules/Classes">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/control.html">control</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Browser.html">Browser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/DeviceJump.html">DeviceJump</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/OrientationTip.html">OrientationTip</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/data.html">data</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Ajax.html">Ajax</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Loading.html">Loading</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/ScreenFit.html">ScreenFit</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Share.html">Share</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Submit.html">Submit</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/String.html">String</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Array.html">Array</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Number.html">Number</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/display.html">display</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Graphical.html">Graphical</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/PcTips.html">PcTips</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/media.html">media</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/SoundBtn.html">SoundBtn</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>scr\data\typeEnlarge.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+/**
+ * Author:tina
+ * DATE: 2016-11-18
+ */
+/**
+ * 数据模块
+ * @module data
+ *
+ */
+/**
+ * 字符串方法扩展
+ * @class String
+ * @constructor
+ * @content {string} type 内容
+ * @demo String.html 
+ * @show true
+ * @static
+ */
+
+/**
+ * 去除两端空格
+ * @method lrtrim
+ */
+
+String.prototype.lrtrim = function()
+{
+    return this.replace(/(^\s*)|(\s*$)/g, &quot;&quot;);
+}
+/**
+ * 去除所有空格
+ * @method trim
+ */
+
+String.prototype.trim=function() { 
+  return this.replace(/[ ]/g,&quot;&quot;);   
+}
+/**
+ * 截取左边count个字符
+ * @method left
+ * @param {String} count 截取的字符
+ */
+String.prototype.left = function(count){
+    return this.substr(0,count);
+}
+/**
+ * 截取右边count个字符
+ * @method right
+ * @param {String} count 截取的字符
+ */
+String.prototype.right = function(count){
+    return this.substr(this.length-count);
+}
+/**
+ * 计算中文字符串的长度，两个英文符号算一个长度。
+ * @method zhLength
+ */
+String.prototype.zhLength = function(){
+    return Math.ceil(this.replace(/[\u4e00-\u9fa5]/g,&#x27;**&#x27;).length/2);
+}
+/**
+ * 验证字符串是否为合法的手机号码
+ * @method checkMoblie
+ */
+
+String.prototype.checkMoblie = function (){
+    return /^1[3|4|5|7|8][0-9]\d{8}$/.test(this);
+}
+/**
+ * 验证字符串是否为合法的身份证号码
+ * @method checkIdCardNo
+ */
+
+String.prototype.checkIdCardNo = function (){
+    return /^[1-9]\d{13}[0-9,x,X]$|^[1-9]\d{16}[0-9,x,X]$/.test(this);
+}
+/**
+ * 验证字符串是否为合法的邮政编码
+ * @method checkZipCode
+ */
+
+String.prototype.checkZipCode = function (){
+    return /^[0-9]{6}$/.test(this);
+}
+/**
+ * 验证字符串是否为合法的电子邮箱地址
+ * @method checkEmail
+ */
+
+String.prototype.checkEmail = function (){
+    return /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(this);
+}
+/**
+ * 获得文件路径中的文件扩展名，可用于文件类型的判断
+ * @method getFileExt
+ */
+String.prototype.getFileExt = function (){
+    return this.right(this.length-this.lastIndexOf(&#x27;.&#x27;)-1);
+}
+
+/**
+ * 将字符串本身复制limit次后返回一个新的字符串
+ * @method copy
+ * @param {int} limit 复制的次数
+ */
+String.prototype.copy = function (limit){
+    if(typeof(limit)==&#x27;undefined&#x27;) limit = 1;
+    var temp = &#x27;&#x27;;
+    for(var i=1;i&lt;=limit;i++){
+        temp += this;
+    }
+    return temp;
+}
+/**
+ * 将字符串本身以“,”分离，并为每个字符加上开标签
+ * @method openLabel
+ */
+
+String.prototype.openLabel = function (){ 
+    if(this!=&#x27;&#x27;) return &#x27;&lt;&#x27;+this.split(&#x27;,&#x27;).join(&#x27;&gt;&lt;&#x27;)+&#x27;&gt;&#x27;;
+    return &#x27;&#x27;;
+}
+/**
+ * 将字符串本身以“,”分离，并为每个字符加上闭合标签
+ * @method closeLabel
+ */
+String.prototype.closeLabel = function (){
+    if(this!=&#x27;&#x27;) return &#x27;&lt;/&#x27;+this.split(&#x27;,&#x27;).reverse().join(&#x27;&gt;&lt;/&#x27;)+&#x27;&gt;&#x27;;
+    return &#x27;&#x27;;
+}
+
+Number.prototype.numCards = function (count,separater,frontChar){
+    if(typeof(separater)==&#x27;undefined&#x27;)separater = &#x27;&#x27;;
+    if(typeof(frontChar)==&#x27;undefined&#x27;)frontChar = &#x27;0&#x27;;
+    var temp = (frontChar.copy(count)+ this).right(count).split(&#x27;&#x27;);
+    return separater.openLabel()+temp.join(separater.closeLabel()+separater.openLabel())+separater.closeLabel();
+}
+
+Number.prototype.numPoints = function (separater){
+		var m=Math.pow(10,separater)
+		return Math.floor(m * this) / m
+}
+
+/**
+*将一维数组中的数据构建成表格形式
+*@numOfRow:每一行要展示的数据数量；@rowLabel:行标签,如:tr;@cellLabel:单元格标签,如:td;@filled:true/false,不满一行是否要填充
+*/
+Array.prototype.buildTable = function (numOfRow,rowLabel,cellLabel,filled){
+    var arrTemp = [];
+    for(var i=0;i&lt;this.length;i++){
+        arrTemp.push(cellLabel.openLabel()+this[i]+cellLabel.closeLabel());
+    }
+    var arrTarget = [];
+    var r = arrTemp.length % numOfRow;
+    if(filled &amp;&amp; r &gt; 0){
+        arrTemp.push((cellLabel.openLabel()+cellLabel.closeLabel()).copy(numOfRow - r));
+    }
+    while(arrTemp.length &gt; 0){
+        arrTarget.push(arrTemp.splice(0,numOfRow).join(&#x27;&#x27;));
+    }
+    return rowLabel.openLabel()+arrTarget.join(rowLabel.closeLabel()+rowLabel.openLabel())+rowLabel.closeLabel();
+}
+
+/**
+*打乱一维数组中数据的顺序
+*/
+Array.prototype.mix = function(){
+    return this.sort(function(a,b){return Math.random()&gt;.5?1:-1;});
+}
+//返回是不是数组
+Array.prototype.isArray = function (arg) {
+        return Object.prototype.toString.call(arg) === &#x27;[object Array]&#x27;;
+};
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

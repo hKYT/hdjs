@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <title>处理字符，数字，数组</title>
+		<script src="../hdjs/hdjs.min.js"></script>
+	</head>
+	<style>
+		body {
+				background: #000;
+				color: #fff;
+				font-family: "微软雅黑", "黑体", "宋体", Helvetica, Verdana, sans-serif;
+				font-size: 10px;
+			}
+	</style>
+	<body>
+		<p>处理字符</p>
+	</body>
+	<script>
+    $(document).ready(function(){
+
+		/*处理字符，数字，数组的方法有很多,详情参照../data/typeEnlarge.js*/
+		
+		var num = 123;
+				
+		console.log(num.numCards(5));//output:00123
+		console.log(num.numCards(5,'b'));//output:<b>0</b><b>0</b><b>1</b><b>2</b><b>3</b>*/
+		console.log(num.numCards(5,'b',"3"));//output:<b>3</b><b>3</b><b>1</b><b>2</b><b>3</b>*/
+		
+		var num1=5555555555555.2345644;
+		console.log(num1.numPoints(3));//output:5555555555555.234
+		
+		var str=" werw werwer dsfsd sd ";
+		console.log(str.trim());              //去除空格
+		console.log(str.zhLength()+"xxxx");
+		
+		var photoNum="13766644323";
+		console.log(photoNum.checkMoblie());             //验证手机号码  output:turu。
+		
+		var myArr=new Array([1,4,3,2,5,3]);                   //随机数组元素
+        console.log("ss:"+myArr.mix());   
+        console.log("ssdd:"+myArr.isArray(myArr));  
+         console.log("ss:"+myArr.buildTable(2,"tr","td",true));  
+        var a="2,3,4,1,er,d,te,w,d";  
+        console.log("ddddddd"+a.openLabel())
+        console.log("wwwwww"+a.closeLabel())
+        console.log("sssssss"+num.numCards())
+         $("p").append(str.trim()+"ssssssssssssssss"+'<br>')
+    })
+
+</script>
+	
+</html>
+
+<!--
+ ../data/typeEnlarge.js  代码如下：
+/**---字符串---**/
+String.prototype.lrtrim = function()//去除两端空格
+{
+    return this.replace(/(^\s*)|(\s*$)/g, "");
+}
+String.prototype.trim=function() { //去除所有空格
+  return this.replace(/[ ]/g,"");   
+}
+String.prototype.left = function(count){//截取左边count个字符
+    return this.substr(0,count);
+}
+String.prototype.right = function(count){//截取右边count个字符
+    return this.substr(this.length-count);
+}
+String.prototype.zhLength = function(){//计算中文字符串的长度，两个英文符号算一个长度。
+    return Math.ceil(this.replace(/[\u4e00-\u9fa5]/g,'**').length/2);
+}
+String.prototype.checkMoblie = function (){//验证字符串是否为合法的手机号码
+    return /^1[3|4|5|7|8][0-9]\d{8}$/.test(this);
+}
+String.prototype.checkIdCardNo = function (){//验证字符串是否为合法的身份证号码
+    return /^[1-9]\d{13}[0-9,x,X]$|^[1-9]\d{16}[0-9,x,X]$/.test(this);
+}
+String.prototype.checkZipCode = function (){//验证字符串是否为合法的邮政编码
+    return /^[0-9]{6}$/.test(this);
+}
+String.prototype.checkEmail = function (){//验证字符串是否为合法的电子邮箱地址
+    return /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(this);
+}
+String.prototype.getFileExt = function (){//获得文件路径中的文件扩展名，可用于文件类型的判断
+    return this.right(this.length-this.lastIndexOf('.')-1);
+}
+String.prototype.copy = function (limit){//将字符串本身复制limit次后返回一个新的字符串
+    if(typeof(limit)=='undefined') limit = 1;
+    var temp = '';
+    for(var i=1;i<=limit;i++){
+        temp += this;
+    }
+    return temp;
+}
+String.prototype.openLabel = function (){
+    if(this!='') return '<'+this.split(',').join('><')+'>';
+    return '';
+}
+String.prototype.closeLabel = function (){
+    if(this!='') return '</'+this.split(',').reverse().join('></')+'>';
+    return '';
+}
+
+/**
+*var num = 123;
+*num.numCards(5);//output:00123
+*num.numCards(5,'b');//output:<b>0</b><b>0</b><b>1</b><b>2</b><b>3</b>
+*/
+Number.prototype.numCards = function (count,separater,frontChar){
+    if(typeof(separater)=='undefined')separater = '';
+    if(typeof(frontChar)=='undefined')frontChar = '0';
+    var temp = (frontChar.copy(count)+ this).right(count).split('');
+    return separater.openLabel()+temp.join(separater.closeLabel()+separater.openLabel())+separater.closeLabel();
+}
+/**
+ * var num=5555555555555.2345644;
+num.numPoints(3) //output:5555555555555.234
+*/
+Number.prototype.numPoints = function (separater){
+		var m=Math.pow(10,separater)
+		return Math.floor(m * this) / m
+}
+
+/**
+*将一维数组中的数据构建成表格形式
+*@numOfRow:每一行要展示的数据数量；@rowLabel:行标签,如:tr;@cellLabel:单元格标签,如:td;@filled:true/false,不满一行是否要填充
+*/
+Array.prototype.buildTable = function (numOfRow,rowLabel,cellLabel,filled){
+    var arrTemp = [];
+    for(var i=0;i<this.length;i++){
+        arrTemp.push(cellLabel.openLabel()+this[i]+cellLabel.closeLabel());
+    }
+    var arrTarget = [];
+    var r = arrTemp.length % numOfRow;
+    if(filled && r > 0){
+        arrTemp.push((cellLabel.openLabel()+cellLabel.closeLabel()).copy(numOfRow - r));
+    }
+    while(arrTemp.length > 0){
+        arrTarget.push(arrTemp.splice(0,numOfRow).join(''));
+    }
+    return rowLabel.openLabel()+arrTarget.join(rowLabel.closeLabel()+rowLabel.openLabel())+rowLabel.closeLabel();
+}
+
+/**
+*打乱一维数组中数据的顺序
+*/
+Array.prototype.mix = function(){
+    return this.sort(function(a,b){return Math.random()>.5?1:-1;});
+}
+-->

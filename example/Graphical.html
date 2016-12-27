@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>canvas绘制图形</title>
+		<style>
+			html{border: none;}
+			body{width:100%;height:100%;border:none;}
+		</style>
+	</head>
+	<body>
+		<div style="position:absolute;z-index:2;">
+		<canvas id="myCanvas" >Canvas画线技巧</canvas>
+		</div>
+	</body>
+	<script src="../hdjs/hdjs.min.js"></script>
+	<script>
+		
+		var cxt = document.getElementById("myCanvas");
+		cxt.width = window.innerWidth;
+		cxt.height = window.innerHeight;
+		var context = this.cxt.getContext('2d');
+		context.fillRect(0, 0, cxt.width,cxt.height);
+		
+		var mygraphical=new HDjs.Graphical()
+		mygraphical.createLine(context,{x:230,y:400},{x:50,y:50},3,"rgba(23,255,255,1)")
+		mygraphical.createPoint(context,{x:430,y:400},50,"rgba(23,24,255,1)",10)
+		
+		mygraphical.createCurve(context,{x:430,y:600},{w:200,h:100},100,"rgba(255,234,25,1)",10)
+	</script>
+</html>

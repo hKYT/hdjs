@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>背景音乐控制</title>
+		<script src="../hdjs/hdjs.min.js"></script>
+		<style type="text/css">
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body style="background: firebrick;">
+		<script type="text/javascript">
+		 var music;
+			$(document).ready(function() {
+				  music= new HDjs.SoundBtn({
+					id:"music",
+					src:"../assets/music/music.mp3",
+					autoplay:true
+				});
+			})
+			function play(){
+				music.play();
+			}
+			function pause(){
+				music.pause();
+			}
+		</script>
+		<button onclick="play()" id="btn" style="width: 200px;  height: 100px;">play</button>
+		<button onclick="pause()" id="btn" style="width: 200px;  height: 100px;">pause</button>
+	</body>
+
+</html>

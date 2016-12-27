@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>scr\data\share.js - HDjs</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://github.com/tina0152/HDjs/">
+             
+            <img alt="HDjs" src="../assets/css/logo.png" title="HDjs">
+            
+                HDjs
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="Search for API" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>Modules/Classes</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to filter Modules/Classes">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/control.html">control</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Browser.html">Browser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/DeviceJump.html">DeviceJump</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/OrientationTip.html">OrientationTip</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/data.html">data</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Ajax.html">Ajax</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Loading.html">Loading</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/ScreenFit.html">ScreenFit</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Share.html">Share</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Submit.html">Submit</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/String.html">String</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Array.html">Array</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/Number.html">Number</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/display.html">display</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/Graphical.html">Graphical</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/PcTips.html">PcTips</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/media.html">media</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/SoundBtn.html">SoundBtn</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>scr\data\share.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums" id='src_code'>
+/**
+ * Author:tina
+ * DATE: 2016-11-23
+ */
+/**
+ * 数据模块
+ * @module data
+ *
+ */
+var browser = require(&quot;../control/browser.js&quot;);
+/**
+ * 微信分享
+ * @class Share
+ * @constructor
+ * @content {string} type 内容
+ * @demo Share.html
+ * @show true
+ * @static
+ *
+ */
+/**
+ * 微信分享初始化
+ * @method Share
+ * @param {String} wxTonken 获取微信token的链接。如：&#x27;http://www.xxx.cn/weixin/jssdk/sample.php&#x27;
+ * @param {Object} config 微信相关数据设置，详情请见示例。
+ */
+var Share = function(wxTonken, config) {
+	var _this = this
+	this.getContentByName = Share.prototype.getContentByName;
+	this.config = {
+		timeline: {
+			&#x27;title&#x27;: this.getContentByName(&quot;timeline_title&quot;),
+			&#x27;desc&#x27;: this.getContentByName(&quot;timeline_title&quot;)
+		},
+		appmessage: {
+			&#x27;title&#x27;: this.getContentByName(&quot;appmessage_title&quot;),
+			&#x27;desc&#x27;: this.getContentByName(&quot;appmessage_desc&quot;)
+		},
+		global: {
+			&#x27;img_url&#x27;: this.getContentByName(&quot;img_url&quot;),
+			&#x27;link&#x27;: this.getContentByName(&quot;link&quot;)
+		}
+	};
+	this.config = $.extend({}, this.config, config);
+	this.config.timeline = $.extend({}, this.config.global, this.config.timeline);
+	this.config.appmessage = $.extend({}, this.config.global, this.config.appmessage);
+
+	/**
+	 * 分享给朋友
+	 * @property appmessage
+	 * @param {String} title 微信分享标题
+	 * @param {String} img_url 微信分享图片链接
+	 * @param {String} desc 微信分享内容
+	 * @param {Function} success 用户确认分享后执行的回调函数，默认为空
+	 * @param {Function} cancel 用户取消分享后执行的回调函数，默认为空
+	 */
+
+	this.appmessage = {
+		title: _this.config.appmessage.title,
+		desc: _this.config.appmessage.desc,
+		link: _this.config.global.link,
+		imgUrl: _this.config.global.img_url,
+		success: function(res) {
+
+		},
+		cancel: function(res) {
+
+		}
+	}
+
+	/**
+	 * 分享到朋友圈
+	 * @property timeline
+	 * @param {String} title 微信分享标题
+	 * @param {String} img_url 微信分享图片链接
+	 * @param {String} desc 微信分享内容
+	 * @param {Function} success 用户确认分享后执行的回调函数，默认为空
+	 * @param {Function} cancel 用户取消分享后执行的回调函数，默认为空
+	 */
+	this.timeline = {
+		title: _this.config.timeline.title,
+		desc: _this.config.timeline.desc,
+		link: _this.config.global.link,
+		imgUrl: _this.config.global.img_url,
+		success: function(res) {
+
+		},
+		cancel: function(res) {
+
+		}
+	}
+	this.wxData = {};
+	this.wxTonken = wxTonken;
+	this.setData = Share.prototype.setData;
+	if(!new browser().isWeixinBrowser()) {
+		console.log(&quot;非微信打开，不需要微信分享功能&quot;)
+		return;
+	}
+	this.getTonken();
+}
+Share.prototype.getContentByName = function(name) {
+	if(document.getElementsByName(&quot;wxm:&quot; + name).length == 1) {
+		return document.getElementsByName(&quot;wxm:&quot; + name)[0].getAttribute(&quot;content&quot;);
+	} else {
+		return &quot;undefined&quot;;
+	}
+}
+Share.prototype.setData = function() {
+	var _this = this
+	wx.config({
+		debug: false,
+		appId: this.wxData.appId,
+		timestamp: this.wxData.timestamp,
+		nonceStr: this.wxData.nonceStr,
+		signature: this.wxData.signature,
+		jsApiList: [
+			&#x27;onMenuShareTimeline&#x27;,
+			&#x27;onMenuShareAppMessage&#x27;,
+			&#x27;onMenuShareQQ&#x27;,
+			&#x27;onMenuShareWeibo&#x27;
+		]
+	});
+	wx.ready(function() {
+		wx.onMenuShareAppMessage(_this.appmessage);
+		wx.onMenuShareTimeline(_this.timeline);
+	});
+};
+
+Share.prototype.getTonken = function() {
+	var url = window.location.href;
+	if(url.indexOf(&#x27;#&#x27;) &gt; -1) {
+		url = url.substr(0, url.indexOf(&#x27;#&#x27;));
+	}
+	url = encodeURIComponent(url);
+	var _this = this;
+	$.ajax({
+		url: _this.wxTonken, //*微信后台url
+		data: {
+			app_url: url
+		},
+		async: false,
+		type: &#x27;get&#x27;,
+		dataType: &#x27;json&#x27;,
+		success: function(dataJson) {
+			_this.wxData = dataJson;
+			_this.setData();
+
+		}
+	});
+
+};
+
+module.exports = Share;
+    </pre>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

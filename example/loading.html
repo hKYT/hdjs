@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>图片加载</title>
+		<script src="../hdjs/hdjs.min.js"></script>
+	</head>
+
+	<body>
+		<p style="font-size: 40px;"></p>
+		<script type="text/javascript">
+			var imgUrl = [
+				'../assets/img/music_off.png',
+				'../assets/img/music_on.png',
+				'../assets/img/musicPlay.png',
+				'../assets/img/musicPlayOff.png'
+			];
+			/* 第一种调用方法：使用默认的loading样式 */
+			var loadImgF = new HDjs.Loading({
+				imgUrl: imgUrl,
+				loadComplete: function() {
+//			removeElement(loade);
+			document.getElementById("loade").style.setProperty("display", "none");
+			$("p").html("图片加载完成")
+		}
+			});
+			
+		
+			/* 第二种调用方法：使用默认的loading样式但更改默认样式中的
+			   背景颜色，字体颜色及loading图片*/
+//			var loadIngF2 = new HDjs.Loading({
+//				imgUrl: imgUrl,
+//				loadColor: "#FFFFFF",
+//				srcUrl: "../assets/img/loading.gif",
+//				width: "500px",
+//				color: "red"
+//			});
+			/* 第三种调用方法：自定义loading页面*/
+			/*var loadIngF3 = new HDjs.Loading({
+				imgUrl: imgUrl,
+				defau:false,
+				setLoadingInfo:function(progress){
+//					加载时的操作，progress为图片加载的进度,类型为int
+				},
+				loadComplete:function(){
+//					加载完成后的操作
+				}
+			});*/
+		</script>
+	</body>
+
+</html>

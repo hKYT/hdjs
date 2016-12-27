@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HDjs</title>
+  
+    <link rel="stylesheet" href="./assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="./assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+</head>
+<body class="yui3-smart" _assetsPath="./assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://github.com/tina0152/HDjs/">
+             
+            <img alt="HDjs" src="./assets/css/logo.png" title="HDjs">
+            
+                HDjs
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="Search for API" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>Modules/Classes</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="Type to filter Modules/Classes">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="./modules/control.html">control</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="./classes/Browser.html">Browser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/DeviceJump.html">DeviceJump</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/OrientationTip.html">OrientationTip</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="./modules/data.html">data</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="./classes/Ajax.html">Ajax</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/Loading.html">Loading</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/ScreenFit.html">ScreenFit</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/Share.html">Share</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/Submit.html">Submit</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/String.html">String</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/Array.html">Array</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/Number.html">Number</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="./modules/display.html">display</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="./classes/Graphical.html">Graphical</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="./classes/PcTips.html">PcTips</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="./modules/media.html">media</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="./classes/SoundBtn.html">SoundBtn</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                        <div class="apidocs">
+        <div id="docs-main" class="content">
+            
+                <h2>HDjs</h2> <p>互动中心技术部前端代码库</p><p>合成zepto，整个库少于70k，比jq小</p><h4>不影响日常开发习惯，以前是怎么写怎么写,只是写的代码量少了</h4><p>基础代码统一，保证项目出品质量</p><p>具备功能:</p><p>Browser:判断浏览器是否是移动端浏览器及是否在微信中打开网页 [ 项目必备 ]</p><p>DeviceJump:依赖于brower，识别浏览器设备，跳转到相应网页 [ 项目必备 ]</p><p>OrientationTip:设备观看方向提示。如横屏提示，竖屏提示 [ 项目必备 ]</p><p>Ajax:Ajax模块 [ 项目必备 ]</p><p>Submit:提交模块 [ 项目必备 ]</p><p>Loading:图片加载 [ 项目必备 ]</p><p>Share:微信分享 [ 项目必备 ]</p><p>String:字符串方法扩展</p><p>Array:数组方法扩展</p><p>Number:数字方法扩展</p><p>Graphical:支持绘制 canvas 线，圆点，圆角矩形等</p><p>PcTips:pc端口 访问 h5页面时，出现h5二维码提示用户移动端访问 [ 项目必备 ]</p><p>SoundBtn:音乐按钮 [ 项目必备 ]</p>
+            
+        </div>
+    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="./assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/vendor/prettify/prettify-min.js"></script>
+<script src="./assets/js/config.js"></script>
+<script src="./assets/js/doc.js"></script>
+</body>
+</html>

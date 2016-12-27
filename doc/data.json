@@ -1,0 +1,1612 @@
+{
+    "project": {
+        "name": "HDjs",
+        "description": "<h2>HDjs</h2> <p>互动中心技术部前端代码库</p><p>合成zepto，整个库少于70k，比jq小</p><h4>不影响日常开发习惯，以前是怎么写怎么写,只是写的代码量少了</h4><p>基础代码统一，保证项目出品质量</p><p>具备功能:</p><p>Browser:判断浏览器是否是移动端浏览器及是否在微信中打开网页 [ 项目必备 ]</p><p>DeviceJump:依赖于brower，识别浏览器设备，跳转到相应网页 [ 项目必备 ]</p><p>OrientationTip:设备观看方向提示。如横屏提示，竖屏提示 [ 项目必备 ]</p><p>Ajax:Ajax模块 [ 项目必备 ]</p><p>Submit:提交模块 [ 项目必备 ]</p><p>Loading:图片加载 [ 项目必备 ]</p><p>Share:微信分享 [ 项目必备 ]</p><p>String:字符串方法扩展</p><p>Array:数组方法扩展</p><p>Number:数字方法扩展</p><p>Graphical:支持绘制 canvas 线，圆点，圆角矩形等</p><p>PcTips:pc端口 访问 h5页面时，出现h5二维码提示用户移动端访问 [ 项目必备 ]</p><p>SoundBtn:音乐按钮 [ 项目必备 ]</p>",
+        "version": "1.1.0",
+        "url": "https://github.com/tina0152/HDjs/"
+    },
+    "files": {
+        "scr\\control\\browser.js": {
+            "name": "scr\\control\\browser.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\control\\browserDoc.js": {
+            "name": "scr\\control\\browserDoc.js",
+            "modules": {
+                "control": 1
+            },
+            "classes": {
+                "Browser": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\control\\deviceJump.js": {
+            "name": "scr\\control\\deviceJump.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\control\\deviceJumpDoc.js": {
+            "name": "scr\\control\\deviceJumpDoc.js",
+            "modules": {},
+            "classes": {
+                "DeviceJump": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\control\\orientationTip.js": {
+            "name": "scr\\control\\orientationTip.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\control\\orientationTipDoc.js": {
+            "name": "scr\\control\\orientationTipDoc.js",
+            "modules": {},
+            "classes": {
+                "OrientationTip": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\ajax.js": {
+            "name": "scr\\data\\ajax.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\ajaxDoc.js": {
+            "name": "scr\\data\\ajaxDoc.js",
+            "modules": {
+                "data": 1
+            },
+            "classes": {
+                "Ajax": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\loadingDoc.js": {
+            "name": "scr\\data\\loadingDoc.js",
+            "modules": {},
+            "classes": {
+                "Loading": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\screenFit.js": {
+            "name": "scr\\data\\screenFit.js",
+            "modules": {},
+            "classes": {
+                "ScreenFit": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\share.js": {
+            "name": "scr\\data\\share.js",
+            "modules": {},
+            "classes": {
+                "Share": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\submit.js": {
+            "name": "scr\\data\\submit.js",
+            "modules": {},
+            "classes": {
+                "Submit": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\typeEnlarge.js": {
+            "name": "scr\\data\\typeEnlarge.js",
+            "modules": {},
+            "classes": {
+                "String": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\typeEnlargeDocArray.js": {
+            "name": "scr\\data\\typeEnlargeDocArray.js",
+            "modules": {},
+            "classes": {
+                "Array": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\data\\typeEnlargeDocNumber.js": {
+            "name": "scr\\data\\typeEnlargeDocNumber.js",
+            "modules": {},
+            "classes": {
+                "Number": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\display\\graphicalDoc.js": {
+            "name": "scr\\display\\graphicalDoc.js",
+            "modules": {
+                "display": 1
+            },
+            "classes": {
+                "Graphical": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\display\\pcTips.js": {
+            "name": "scr\\display\\pcTips.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\display\\pcTipsDoc.js": {
+            "name": "scr\\display\\pcTipsDoc.js",
+            "modules": {},
+            "classes": {
+                "PcTips": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\media\\soundBtn.js": {
+            "name": "scr\\media\\soundBtn.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "scr\\media\\soundBtnDoc.js": {
+            "name": "scr\\media\\soundBtnDoc.js",
+            "modules": {
+                "media": 1
+            },
+            "classes": {
+                "SoundBtn": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "control": {
+            "name": "control",
+            "submodules": {},
+            "classes": {
+                "Browser": 1,
+                "DeviceJump": 1,
+                "OrientationTip": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "scr\\control\\orientationTipDoc.js",
+            "line": 6,
+            "description": "控制模块"
+        },
+        "data": {
+            "name": "data",
+            "submodules": {},
+            "classes": {
+                "Ajax": 1,
+                "Loading": 1,
+                "ScreenFit": 1,
+                "Share": 1,
+                "Submit": 1,
+                "String": 1,
+                "Array": 1,
+                "Number": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "scr\\data\\typeEnlargeDocNumber.js",
+            "line": 7,
+            "description": "数据模块"
+        },
+        "display": {
+            "name": "display",
+            "submodules": {},
+            "classes": {
+                "Graphical": 1,
+                "PcTips": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "scr\\display\\pcTipsDoc.js",
+            "line": 6,
+            "description": "展示模块"
+        },
+        "media": {
+            "name": "media",
+            "submodules": {},
+            "classes": {
+                "SoundBtn": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "scr\\media\\soundBtnDoc.js",
+            "line": 6,
+            "description": "多媒体模块"
+        }
+    },
+    "classes": {
+        "Browser": {
+            "name": "Browser",
+            "shortname": "Browser",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "control",
+            "namespace": "",
+            "file": "scr\\control\\browserDoc.js",
+            "line": 6,
+            "description": "判断浏览器是否是移动端浏览器及是否在微信中打开网页",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t\n\t\t<head lang=\"en\">\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>端口判断</title>\n\t\t\t<style type=\"text/css\">\n\t\t\t\tbody {\n\t\t\t\t\twidth: 100%;\n\t\t\t\t\theight: 100%;\n\t\t\t\t}\n\t\t\t\tp {\n\t\t\t\t\tfont-size: 40px;\n\t\t\t\t}\n\t\t\t</style>\n\t\t</head>\n\t\n\t\t<body>\n\t\t\t<p></p>\n\t\t\t<script>\n\t\t\t\tvar browser = new HDjs.Browser();\n\t\t\t\tif(browser.isMobileBrowser()) {\n\t\t\t\t\t$(\"p\").append(\"MobileBrowser <br>\");\n\t\t\t\t} else {\n\t\t\t\t\t$(\"p\").append(\"It isn't MobileBrowser<br>\");\n\t\t\t\t};\n\t\t\t\tif(browser.isWeixinBrowser()) {\n\t\t\t\t\t$(\"p\").append(\"weixinBrowser\");\n\t\n\t\t\t\t} else {\n\t\t\t\t\t$(\"p\").append(\"It isn't weixinBrowser\");\n\t\t\t\t};\n\t\t\t</script>\n\t\t</body>\n\t\n\t</html>"
+            ],
+            "exampleTitles": [
+                "Browser"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "DeviceJump": {
+            "name": "DeviceJump",
+            "shortname": "DeviceJump",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "control",
+            "namespace": "",
+            "file": "scr\\control\\deviceJumpDoc.js",
+            "line": 6,
+            "description": "依赖于brower，识别浏览器设备，跳转到相应网页",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t\n\t\t<head lang=\"en\">\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>设备跳转</title>\n\t\t</head>\n\t\n\t\t<body>\n\t\t\t<script>\n\t\n\t\t\t\t\t/* =========设备跳转\"../control/deviceJump.js\"=========*/\n\t\t\t\t\tnew HDjs.DeviceJump('pc');\n\t\t\t</script>\n\t\n\t\t</body>\n\t\n\t</html>"
+            ],
+            "exampleTitles": [
+                "DeviceJump"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "OrientationTip": {
+            "name": "OrientationTip",
+            "shortname": "OrientationTip",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "control",
+            "namespace": "",
+            "file": "scr\\control\\orientationTipDoc.js",
+            "line": 6,
+            "description": "设备观看方向提示。如横屏提示，竖屏提示",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t<head lang=\"en\">\n\t    <meta charset=\"UTF-8\">\n\t    <title>横竖屏提示</title>\n\t</head>\n\t<body>\n\t<script>\n\t    $(document).ready(function(){\n\t\n\t       /* =========旋屏提示\"../control/orientationTip.js\"=========*/\n\t         new HDjs.OrientationTip(false);\n\t\n\t    })\n\t\n\t\n\t/*new Tina.OrientationTip();*/\n\t</script>\n\t\n\t</body>\n\t</html>"
+            ],
+            "exampleTitles": [
+                "orientationTip"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "Ajax": {
+            "name": "Ajax",
+            "shortname": "Ajax",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\ajaxDoc.js",
+            "line": 10,
+            "description": "Ajax模块，特点：与$.ajax()使用方式类似，并自带功能。<br> 自带功能如下：<br> 1检测合法性，包括姓名，手机号码，邮箱地址，年龄，身份证号等<br> 2 避免同一地址在数据未返回之前重复提交 <br>3 自带提交中，请勿重复提交等提示。可设置是否可见",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\r\n\t<html>\r\n\t\t<head>\r\n\t\t\t<meta charset=\"UTF-8\">\r\n\t\t\t<title>HDjs.Ajax模块，和ajax用法一样，功能更强大</title>\r\n\t\t</head>\r\n\t\t<body>\r\n\t\t\t<p></p>\r\n\t\t</body>\r\n\t\t<script>\r\n\t\t\t//和平时写ajax格式是一样的喔\r\n\t\t\tHDjs.Ajax({\r\n\t\t\t\turl : './index.php?g=sanjiuchunwan&m=User&a=index',\r\n\t\t\t\tdata:{\r\n\t\t\t\t\tname: \"我是婷婷\",\r\n\t\t\t\t\tage: 18\r\n\t\t\t\t},\r\n\t\t\t\tsuccess:function(obj){\r\n\t\t\t\t\tconsole.log(\"提交成功，数据为：\"+obj);\r\n\t\t\t\t\t$(\"p\").append('提交成功');  \r\n\t\t\t\t},\r\n\t\t\t\terror:function(obj){\r\n\t\t\t\t\tconsole.log(\"提交失败，数据为：\"+obj);\r\n\t\t\t\t\t$(\"p\").append(\"提交失败，数据为：\"+obj);   \r\n\t\t\t\t}\r\n\t\t\t},false);\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t//也可以这样写写，和以上写法一样\r\n\t\t\tvar mydata = new Object();\r\n\t\t\tmydata.url = './index.php?g=sanjiuchunwan&m=User&a=index';\r\n\t\t\tmydata.data = {\r\n\t\t\t\tname: \"婷婷\",\r\n\t\t\t\tage: 18\r\n\t\t\t};\r\n\t\t\tmydata.succeed = function() {\r\n\t\t\t\tconsole.log(\"提交成功，数据为：\"+obj);\r\n\t\t\t\t$(\"p\").append('提交成功');  \r\n\t\t\t};\r\n\t\t\tmydata.error=function(obj){\r\n\t\t\t\tconsole.log(\"提交失败，数据为：\"+obj);\r\n\t\t\t\t$(\"p\").append(\"提交失败，数据为：\"+obj);   \r\n\t\t\t};\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tHDjs.Ajax(mydata);  //测测重复提交\r\n\t\t\t\r\n\t\t\t\r\n\t\t</script>\r\n\t</html>\r\n\t"
+            ],
+            "exampleTitles": [
+                "Ajax"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "Loading": {
+            "name": "Loading",
+            "shortname": "Loading",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\loadingDoc.js",
+            "line": 6,
+            "description": "图片加载，可用于h5 首页loading加载",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t\n\t\t<head>\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>图片加载例1</title>\n\t\t\t\n\t\t</head>\n\t\n\t\t<body>\n\t\t\t<p style=\"font-size: 40px;\"></p>\n\t\t\t<script>\n\t\t\t\tvar imgUrl = [\n\t\t\t\t\t'../../assets/img/music_off.png',\n\t\t\t\t\t'../../assets/img/music_on.png',\n\t\t\t\t\t'../../assets/img/musicPlay.png',\n\t\t\t\t\t'../../assets/img/musicPlayOff.png'\n\t\t\t\t];\n\t\t\t\t/* 第一种调用方法：使用默认的loading样式 */\n\t\t\t\tvar loadImgF = new HDjs.Loading({\n\t\t\t\t\timgUrl: imgUrl,\n\t\t\t\t\tloadComplete: function() {\n\t\t\t\t\t\tdocument.getElementById(\"loade\").style.setProperty(\"display\", \"none\");\n\t\t\t\t\t\t$(\"p\").html(\"图片加载完成\");\n\t\t\t\t\t}\n\t\n\t\t\t\t});\n\t\t\t</script>\n\t\n\t\t</body>\n\t\n\t</html>",
+                "\t<!DOCTYPE html>\n\t<html>\n\t\n\t\t<head>\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>图片加载例2</title>\n\t\t</head>\n\t\n\t\t<body>\n\t\t\t<p style=\"font-size: 40px;\"></p>\n\t\t\t<script>\n\t\t\t\tvar imgUrl = [\n\t\t\t\t\t'../../assets/img/music_off.png',\n\t\t\t\t\t'../../assets/img/music_on.png',\n\t\t\t\t\t'../../assets/img/musicPlay.png',\n\t\t\t\t\t'../../assets/img/musicPlayOff.png'\n\t\t\t\t];\n\t\t\t\tvar loadIngF2 = new HDjs.Loading({\n\t\t\t\t\timgUrl: imgUrl,\n\t\t\t\t\tloadColor: \"#FFFFFF\",\n\t\t\t\t\tsrcUrl: \"../assets/img/loadImg.gif\",\n\t\t\t\t\twidth: \"500px\",\n\t\t\t\t\tcolor: \"red\",\n\t\t\t\t\tloadComplete: function() {\n\t\t\t\t\t\tdocument.getElementById(\"loade\").style.setProperty(\"display\", \"none\");\n\t\t\t\t\t\t$(\"p\").html(\"图片加载完成\");\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t</script>\n\t\n\t\t</body>\n\t\n\t</html>",
+                "\t<!DOCTYPE html>\n\t<html>\n\t\n\t\t<head>\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>图片加载例3</title>\n\t\t\t<style type=\"text/css\">\n\t\t\t\thtml,body,.loade{\n\t\t\t\t\twidth: 100%;\n\t\t\t\t\theight: 100%;\n\t\t\t\t}\n\t\t\t\t.loade{\n\t\t\t\t\tbackground-color: gold;\n\t\t\t\t}\n\t\t\t\tp{\n\t\t\t\t\twidth: 100%;\n\t\t\t\t\ttext-align: center;\n\t\t\t\t\tpadding-top: 40%;\n\t\t\t\t\tpadding-bottom: 40%;\n\t\t\t\t\tfont-size: 40px;\n\t\t\t\t}\n\t\t\t\tspan{\n\t\t\t\t\tfont-size: 50px;\n\t\t\t\t\tcolor: darkmagenta;\n\t\t\t\t}\n\t\t\t</style>\n\t\t</head>\n\t\n\t\t<body>\n\t\t\t<div class=\"loade\">\n\t\t\t\t<p>已加载<span></span>%</p>\n\t\t\t</div>\n\t\t\t<h1></h1>\n\t\t\t<script>\n\t\t\t\n\t\t\t\tvar imgUrl = [\n\t\t\t\t\t'../../assets/img/music_off.png',\n\t\t\t\t\t'../../assets/img/music_on.png',\n\t\t\t\t\t'../../assets/img/musicPlay.png',\n\t\t\t\t\t'../../assets/img/musicPlayOff.png'\n\t\t\t\t];\n\t\t\t\tvar loadIngF3 = new HDjs.Loading({\n\t\t\t\t\timgUrl: imgUrl,\n\t\t\t\t\tdefau: false,\n\t\t\t\t\tsetLoadingInfo: function(progress) {\n\t\t\t\t\t\t//\t\t\t\t\t加载时的操作，progress为图片加载的进度,类型为int\n\t\t\t\t\t\t$(\"span\").html(progress);\n\t\t\t\t\t},\n\t\t\t\t\tloadComplete: function() {\n\t\t\t\t\t\t//\t\t\t\t\t加载完成后的操作\n\t\t\t\t\t$(\"h1\").html(\"图片加载完成\");\n\t\t\t\t\t}\n\t\t\t\t})\n\t\t\t</script>\n\t\t</body>\n\t\n\t</html>"
+            ],
+            "exampleTitles": [
+                "第一种调用方法",
+                "第二种调用方法",
+                "第三种调用方法"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "ScreenFit": {
+            "name": "ScreenFit",
+            "shortname": "ScreenFit",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\screenFit.js",
+            "line": 10,
+            "description": "响应式网页元素属性计算,可计算页面元素缩放后画面的坐标",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\r\n\t<html>\r\n\t\t<head>\r\n\t\t\t<meta charset=\"UTF-8\">\r\n\t\t\t<title>响应式网页元素属性计算</title>\r\n\t\t\r\n\t\t</head>\r\n\t\t<style type=\"text/css\">\t\r\n\t\t\t#bg {\r\n\t\t\t\tposition: absolute;\r\n\t\t\t\twidth: 100%;\r\n\t\t\t\theight: 100%;\r\n\t\t\t\tbackground: url(../../assets/img/screenFit/bg.jpg) center no-repeat;\r\n\t\t\t\tbackground-size: cover;\r\n\t\t\t}\r\n\t\t\t#car {\t\t\r\n\t\t\t\tposition: absolute;\r\n\t\t\t\tz-index: 99;\r\n\t\t\t}\r\n\t\t\t#__show{\r\n\t\t\t\t margin:0; padding:0;border:0;\r\n\t\t\t}\r\n\t\t\t#__logs{\r\n\t\t\t\t margin:0; padding:0;border:0;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\timg{border:0; vertical-align:top;}\r\n\t\t\tbody,div,html{ margin:0; padding:0;border:0;}\r\n\t\t</style>\r\n\t\t<body>\r\n\t\t\t<div id=\"car\">\r\n\t\t\t\t<img id=\"icar\" src=\"../../assets/img/screenFit/car.png\"></img>\r\n\t\t\t</div>\r\n\t\t\t<div id=\"bg\"></div>\t\t\r\n\t\t</body>\r\n\t\t<script>\r\n\t\t\t$(document).ready(function() {\r\n\t\t\t\tvar myCar = document.getElementById(\"car\");  \r\n\t\t\t\tvar icar = document.getElementById(\"icar\");  \r\n\t\t\t\tvar sf = new HDjs.ScreenFit();\r\n\t\t\t\tsetCar()\r\n\t\t\t\t$(window).resize(function() {\t\r\n\t\t\t\t\tsetCar()\t\t\r\n\t\t\t\t})\r\n\t\t\t\tfunction setCar(){\t\t\t\r\n\t\t\t\t\ticar.style.width=sf.scale()+\"%\";\r\n\t\t\t\t\tmyCar.style.left=sf.getX(843)+\"px\";\r\n\t\t\t\t\tmyCar.style.top=sf.getY(724)+\"px\";\r\n\t\t\t\t\t\r\n\t\t\t\t}\r\n\t\t\t})\r\n\t\t</script>\r\n\t\r\n\t</html>"
+            ],
+            "exampleTitles": [
+                "screenFit"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "Share": {
+            "name": "Share",
+            "shortname": "Share",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\share.js",
+            "line": 11,
+            "description": "微信分享",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t\n\t\t<head>\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>微信分享</title>\n\t\n\t\t</head>\n\t\n\t\t<body>\n\t\t\t<h2>微信分享</h2>\n\t\t\t<script>\n\t\t\t\tvar data = {\n\t\t\t\t\ttimeline: {\n\t\t\t\t\t\t'title': \"我是标题timeline\"\n\t\t\t\t\t},\n\t\t\t\t\tappmessage: {\n\t\t\t\t\t\t'title': \"我是标题\",\n\t\t\t\t\t\t'desc': \"我是说明文字\"\n\t\t\t\t\t},\n\t\t\t\t\tglobal: {\n\t\t\t\t\t\t'img_url': \"http://cdn.joboto-public.jobtong.com/efc94893e30724b0ab37afd08dd17a5771ced602.png\",\n\t\t\t\t\t\t'link': \"什么鬼链接，木有啊\"\n\t\t\t\t\t}\n\t\t\t\t};\n\t\n\t\t\t\tvar share = new HDjs.Share('http://www.gimc.cn/weixin/jssdk/sample.php', data);\n\t\t\t\tshare.timeline.title = \"改了的timelineTitle\";\n\t\t\t\tshare.appmessage.title = \"timelinetimeline\";\n\t\t\t\tshare.timeline.img_url = \"http://cdn.joboto-public.jobtong.com/efc94893e30724b0ab37afd08dd17a5771ced602.png\";\n\t\t\t\tshare.appmessage.desc = \"descdesc\";\n\t\t\t\tshare.appmessage.success = function() {\n\t\t\t\t\talert('分享成功');\n\t\t\t\t}\n\t\t\t</script>\n\t\t</body>\n\t\n\t</html>"
+            ],
+            "exampleTitles": [
+                "Share"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "Submit": {
+            "name": "Submit",
+            "shortname": "Submit",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\submit.js",
+            "line": 10,
+            "description": "提交模块，特点：无需记住ajax属性，并自带功能。HDjs.Ajax为基础。<br> 自带功能如下：<br> 1检测合法性，包括姓名，手机号码，邮箱地址，年龄，身份证号等<br> 2 避免同一地址在数据未返回之前重复提交 <br>3 自带提交中，请勿重复提交等提示",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t\t<head>\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>提交模块，不用配置ajax属性</title>\n\t\t</head>\n\t\n\t\t<body>\n\t\t\t<p></p>\n\t\t</body>\n\t\t<script>\n\t\t\tvar url = './index.php?g=sanjiuchunwan&m=User&a=index'\n\t\t\tvar succcess = function(obj) {\n\t\t\t\tconsole.log(\"提交成功，数据为：\" + obj);\n\t\t\t\t$(\"p\").append('提交成功');\n\t\t\t}\n\t\t\t//(myUrl,mySuccess,mydata,mytype,tips,other)\n\t\t\n\t\t\tHDjs.Submit(url, succcess, {\n\t\t\t\t\tname: \"婷婷\",\n\t\t\t\t\tage: 18\n\t\t\t\t},\n\t\t\t\t\"GET\",\n\t\t\t\ttrue, {\n\t\t\t\t\terror: function(obj) {\n\t\t\t\t\t\tconsole.log(\"提交失败，数据为：\" + obj);\n\t\t\t\t\t\t$(\"p\").append(\"提交失败，数据为：\" + obj);\n\t\t\t\t\t}\n\t\t\t\t})\n\t\t\t\n\t\t\t//再提交一次\n\t\t\tHDjs.Submit(url, succcess);\n\t\t\t\n\t\t</script>\n\t</html>"
+            ],
+            "exampleTitles": [
+                "Submit"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "String": {
+            "name": "String",
+            "shortname": "String",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 10,
+            "description": "字符串方法扩展",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\r\n\t<html>\r\n\t\t<head>\r\n\t\t\t<meta charset=\"UTF-8\">\r\n\t\t\t <title>处理字符</title>\r\n\t   \t\t<style>\r\n\t\t\tbody {\r\n\t\t\t\t\tbackground: #000;\r\n\t\t\t\t\tcolor: #fff;\r\n\t\t\t\t\tfont-family: \"微软雅黑\", \"黑体\", \"宋体\", Helvetica, Verdana, sans-serif;\r\n\t\t\t\t\tfont-size: 10px;\r\n\t\t\t\t}\r\n\t\t</style>\r\n\t\t</head>\r\n\t\t<body><p>处理字符</p>\r\n\t\t</body>\r\n\t\t<script>\r\n\t    $(document).ready(function(){\r\n\t\r\n\t\t\t/*处理字符的方法有很多,详情参照../data/typeEnlarge.js*/\r\n\t\t\t\r\n\t\t\tvar str=\" we are the world \";\r\n\t\t\tvar str1= \"3,2,3,4,5\";\r\n\t\t\t$(\"p\").append('</br>'+\"lrtrim:\"+str.lrtrim()+\"//去除两端空格\"+'<br>'); // 去除两端空格\r\n\t\t\t$(\"p\").append('</br>'+\"trim:\"+str.trim()+\"//去除空格\"+'<br>');    //去除空格    \r\n\t\t\t$(\"p\").append('</br>'+\"left:\"+str.left(3)+\"//截取左边3个字符\"+'<br>');    //截取左边3个字符     \r\n\t\t\t$(\"p\").append('</br>'+\"right:\"+str.right(3)+\"//截取右边3个字符\"+'<br>');    //截取右边3个字符    \r\n\t\t\t$(\"p\").append('</br>'+\"zhLength:\"+str.zhLength()+\"//计算中文字符串的长度，两个英文符号算一个长度。\"+'<br>');    //计算中文字符串的长度，两个英文符号算一个长度。\r\n\t\t\t$(\"p\").append('</br>'+\"checkMoblie:\"+str.checkMoblie()+\"//验证字符串是否为合法的手机号码\"+'<br>');    //验证字符串是否为合法的手机号码\r\n\t\t\t$(\"p\").append('</br>'+\"checkIdCardNo:\"+str.checkIdCardNo()+\"//验证字符串是否为合法的身份证号码\"+'<br>');    //验证字符串是否为合法的身份证号码\r\n\t\t\t$(\"p\").append('</br>'+\"checkZipCode:\"+str.checkZipCode()+\"//验证字符串是否为合法的邮政编码\"+'<br>');    //验证字符串是否为合法的邮政编码\r\n\t\t\t$(\"p\").append('</br>'+\"checkEmail:\"+str.checkEmail()+\"//验证字符串是否为合法的电子邮箱地址\"+'<br>');    //验证字符串是否为合法的电子邮箱地址\r\n\t\t\t$(\"p\").append('</br>'+\"getFileExt:\"+str.getFileExt()+\"//获得文件路径中的文件扩展名，可用于文件类型的判断\"+'<br>');    //获得文件路径中的文件扩展名，可用于文件类型的判断\r\n\t\t\t$(\"p\").append('</br>'+\"copy:\"+str.copy(3)+\"//将字符串本身复制3次后返回一个新的字符串\"+'<br>');    //将字符串本身复制3次后返回一个新的字符串\r\n\t\t\t$(\"p\").append('</br>'+\"openLabel:\"+str1.openLabel()+\"//将字符串本身以“,”分离，并为每个字符加上开标签\"+'<br>');    //将字符串本身以“,”分离，并为每个字符加上开标签\r\n\t\t\t$(\"p\").append('</br>'+\"closeLabel:\"+str1.closeLabel()+\"//将字符串本身以“,”分离，并为每个字符加上闭合标签\"+'<br>');    //将字符串本身以“,”分离，并为每个字符加上闭合标签\r\n\t\t\t\r\n\t\t\t\r\n\t//\t\tconsole.log(str.zhLength()+\"xxxx\");\r\n\t//\t\tconsole.log(str.left(\"w\");\r\n\t//\t\t\r\n\t//\t\tvar photoNum=\"13766644323\";\r\n\t//\t\tconsole.log(photoNum.checkMoblie());             //验证手机号码  output:turu。\r\n\t//\t\t$(\"p\").append('</br>'+str.trim()+\"ssssssssssssssss\"+'<br>');\r\n\t      \r\n\t    })\r\n\t</script>\r\n\t</html>\r\n\t"
+            ],
+            "exampleTitles": [
+                "String"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "Array": {
+            "name": "Array",
+            "shortname": "Array",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\typeEnlargeDocArray.js",
+            "line": 7,
+            "description": "数组方法扩展",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\r\n\t<html>\r\n\t\t<head>\r\n\t\t\t<meta charset=\"UTF-8\">\r\n\t\t\t <title>处理一维数组</title>\r\n\t   \t\t<style>\r\n\t\t\tbody {\r\n\t\t\t\t\tbackground: #000;\r\n\t\t\t\t\tcolor: #fff;\r\n\t\t\t\t\tfont-family: \"微软雅黑\", \"黑体\", \"宋体\", Helvetica, Verdana, sans-serif;\r\n\t\t\t\t\tfont-size: 10px;\r\n\t\t\t\t}\r\n\t\t</style>\r\n\t\t</head>\r\n\t\t<body><p>处理一维数组</p>\r\n\t\t</body>\r\n\t\t<script>\r\n\t    $(document).ready(function(){\r\n\t\r\n\t\t\t/*处理字符的方法有很多,详情参照../data/typeEnlarge.js*/\r\n\t\t\t\r\n\t\t\tvar arrayNum=[12,23,24,26,56,78];\r\n\t\t\t$(\"p\").append('</br>'+\"buildTable:\"+arrayNum.buildTable(3,'tr',\"td\",false)+\"//将一维数组中的数据构建成表格形式\"+'<br>');   //将一维数组中的数据构建成表格形式\r\n\t\t\t$(\"p\").append('</br>'+\"mix:\"+arrayNum.mix()+\"//打乱一维数组中数据的顺序\"+'<br>');   //打乱一维数组中数据的顺序\r\n\t\t\t$(\"p\").append('</br>'+\"isArray:\"+arrayNum.isArray(arrayNum)+\"//返回是不是数组\"+'<br>');   //返回是不是数组\r\n\t    })\r\n\t</script>\r\n\t</html>"
+            ],
+            "exampleTitles": [
+                "Array"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "Number": {
+            "name": "Number",
+            "shortname": "Number",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "data",
+            "namespace": "",
+            "file": "scr\\data\\typeEnlargeDocNumber.js",
+            "line": 7,
+            "description": "数字方法扩展",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\r\n\t<html>\r\n\t\t<head>\r\n\t\t\t<meta charset=\"UTF-8\">\r\n\t\t\t <title>处理数字</title>\r\n\t   \t\t<style>\r\n\t\t\tbody {\r\n\t\t\t\t\tbackground: #000;\r\n\t\t\t\t\tcolor: #fff;\r\n\t\t\t\t\tfont-family: \"微软雅黑\", \"黑体\", \"宋体\", Helvetica, Verdana, sans-serif;\r\n\t\t\t\t\tfont-size: 10px;\r\n\t\t\t\t}\r\n\t\t</style>\r\n\t\t</head>\r\n\t\t<body><p>处理数字</p>\r\n\t\t</body>\r\n\t\t<script>\r\n\t    $(document).ready(function(){\r\n\t\r\n\t\t\t/*处理字符的方法有很多,详情参照../data/typeEnlarge.js*/\r\n\t\t\t\r\n\t\t\tvar num=232;\r\n\t\t\tvar num1=232.1356;\r\n\t\t\t$(\"p\").append('</br>'+\"numCards:\"+num.numCards(5,'b',\"3\")+\"//数字补位操作\"+'<br>');   //数字补位操作\r\n\t\t\t$(\"p\").append('</br>'+\"numCards:\"+num1.numPoints(3)+\"//保存小数点\"+'<br>');   //保存小数点\r\n\t    })\r\n\t</script>\r\n\t</html>"
+            ],
+            "exampleTitles": [
+                "Number"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "Graphical": {
+            "name": "Graphical",
+            "shortname": "Graphical",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "display",
+            "namespace": "",
+            "file": "scr\\display\\graphicalDoc.js",
+            "line": 6,
+            "description": "支持绘制 canvas 线，圆点，圆角矩形等",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\r\n\t<html>\r\n\t\t<head>\r\n\t\t\t<meta charset=\"UTF-8\">\r\n\t\t\t<title>canvas图形绘制</title>\r\n\t\t\t<style>\r\n\t\t\t\thtml{border: none;}\r\n\t\t\t\tbody{width:100%;height:100%;border:none;}\r\n\t\t\t</style>\r\n\t\t</head>\r\n\t\t<body>\r\n\t\t\t<div style=\"position:absolute;z-index:2;\">\r\n\t\t\t<canvas id=\"myCanvas\" >canvas图形绘制</canvas>\r\n\t\t\t</div>\r\n\t\t</body>\r\n\t\t<script>\t\t\r\n\t\t\tvar cxt = document.getElementById(\"myCanvas\");\r\n\t\t\tcxt.width = window.innerWidth;\r\n\t\t\tcxt.height = window.innerHeight;\r\n\t\t\tvar con = cxt.getContext('2d');\r\n\t\t\tcon.fillRect(0, 0, cxt.width,cxt.height);\r\n\t\t\t\r\n\t\t\tvar mygraphical=new HDjs.Graphical();\r\n\t\t\tmygraphical.createLine(con,{x:230,y:300},{x:50,y:50},3,\"rgba(23,255,255,1)\")\r\n\t        mygraphical.createPoint(con,{x:230,y:100},50,\"rgba(23,24,255,1)\",1)\r\n\t        mygraphical.createCurve(con,{x:430,y:10},{w:200,h:100},\"rgba(255,234,25,1)\",5,2)\r\n\t\t</script>\r\n\t</html>\r\n\t"
+            ],
+            "exampleTitles": [
+                "Graphical"
+            ],
+            "show": true
+        },
+        "PcTips": {
+            "name": "PcTips",
+            "shortname": "PcTips",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "display",
+            "namespace": "",
+            "file": "scr\\display\\pcTipsDoc.js",
+            "line": 6,
+            "description": "pc端口 访问 h5页面时，出现h5二维码提示用户移动端访问",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t\t<head>\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>pc二维码提示</title>\n\t\t</head>\n\t\t<body>\n\t\t\t<h2>pc二维码提示</h2>\n\t\t\t<script>\n\t\t\t\t/*../display/pcTips.js*/\n\t\t\t\t$(function() {\n\t\t\t\t\tnew HDjs.PcTips(\"http://cdn.joboto-public.jobtong.com/efc94893e30724b0ab37afd08dd17a5771ced602.png\"); //默认微信logo，也可添加logo\n\t\t\t\t})\n\t\t\t</script>\n\t\t</body>\n\t\n\t</html>"
+            ],
+            "exampleTitles": [
+                "pcTips"
+            ],
+            "show": true,
+            "static": 1
+        },
+        "SoundBtn": {
+            "name": "SoundBtn",
+            "shortname": "SoundBtn",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "media",
+            "namespace": "",
+            "file": "scr\\media\\soundBtnDoc.js",
+            "line": 6,
+            "description": "音乐按钮",
+            "is_constructor": 1,
+            "content": "{string} type 内容",
+            "example": [
+                "\t<!DOCTYPE html>\n\t<html>\n\t\n\t\t<head>\n\t\t\t<meta charset=\"UTF-8\">\n\t\t\t<title>背景音乐控制</title>\n\t\t\t<style type=\"text/css\">\n\t\t\t\thtml,body{\n\t\t\t\t\twidth: 100%;\n\t\t\t\t\theight: 100%;\n\t\t\t\t\tbackground-color: firebrick;\n\t\t\t\t}\n\t\t\t</style>\n\t\t</head>\n\t\t<body style=\"background-color: firebrick;\">\n\t\t\t<script>\n\t\t\t var music;\n\t\t\t\t$(document).ready(function() {\n\t\t\t\t\t  music= new HDjs.SoundBtn({\n\t\t\t\t\t\tid:\"music\",\n\t\t\t\t\t\tsrc:\"../../assets/music/music.mp3\",\n\t\t\t\t\t\tautoplay:true\n\t\t\t\t\t});\n\t\t\t\t})\n\t\t\t\tfunction play(){\n\t\t\t\t\tmusic.play();\n\t\t\t\t}\n\t\t\t\tfunction pause(){\n\t\t\t\t\tmusic.pause();\n\t\t\t\t}\n\t\t\t\t$(\"#btn1\").click(function(){\n\t\t\t\t\tpause();\n\t\t\t\t});\n\t\t\t\t$(\"#btn\").click(function(){\n\t\t\t\t\tplay();\n\t\t\t\t})\n\t\t\t</script>\n\t\t\t<button  id=\"btn\" style=\"width: 200px;  height: 100px;\">play</button>\n\t\t\t<button  id=\"btn1\" style=\"width: 200px;  height: 100px;\">pause</button>\n\t\t</body>\n\t\n\t</html>"
+            ],
+            "exampleTitles": [
+                "soundBtn"
+            ],
+            "show": true,
+            "static": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "scr\\control\\browser.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-11-18",
+            "class": "Browser"
+        },
+        {
+            "file": "scr\\control\\browserDoc.js",
+            "line": 16,
+            "itemtype": "method",
+            "name": "Browser",
+            "params": [
+                {
+                    "name": "Browser.isMobileBrowser",
+                    "description": "是否是移动端浏览器返回值为true||false",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "Browser.isWeixinBrowser",
+                    "description": "是否在微信中打开网页 ，返回值为true||false",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Browser",
+            "module": "control"
+        },
+        {
+            "file": "scr\\control\\deviceJump.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-11-18",
+            "class": "DeviceJump",
+            "module": "control"
+        },
+        {
+            "file": "scr\\control\\deviceJumpDoc.js",
+            "line": 16,
+            "description": "当在PC端打开移动网页时跳转到对应的PC网页，当在移动端打开PC网页时，跳转到对应的移动网页",
+            "itemtype": "method",
+            "name": "DeviceJump",
+            "params": [
+                {
+                    "name": "deviceName",
+                    "description": "当前网页适合在PC端打开还是移动端，值为“pc”||\"m\",没有赋值时默认为“m”",
+                    "type": "String"
+                }
+            ],
+            "class": "DeviceJump",
+            "module": "control"
+        },
+        {
+            "file": "scr\\control\\orientationTip.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-11-18",
+            "class": "OrientationTip",
+            "module": "control"
+        },
+        {
+            "file": "scr\\control\\orientationTipDoc.js",
+            "line": 16,
+            "description": "横屏提示",
+            "itemtype": "method",
+            "name": "orientationTip",
+            "params": [
+                {
+                    "name": "isShuping",
+                    "description": "是否竖屏观看，默认为true。",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "OrientationTip",
+            "module": "control"
+        },
+        {
+            "file": "scr\\data\\ajax.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-12-20",
+            "class": "Ajax",
+            "module": "control"
+        },
+        {
+            "file": "scr\\data\\ajaxDoc.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-12-20",
+            "class": "Ajax",
+            "module": "control"
+        },
+        {
+            "file": "scr\\data\\ajaxDoc.js",
+            "line": 20,
+            "description": "数据提交，只需要设置相应属性便可提交。自带检测姓名手机号码",
+            "itemtype": "method",
+            "name": "Ajax",
+            "params": [
+                {
+                    "name": "myData",
+                    "description": "用于配置 Ajax 请求的键值对集合。data参数中，对name进行中文名验证，对phone进行手机号码验证，对age进行年龄验证，对email进行邮箱地址验证，对idCard进行身份证号验证。",
+                    "type": "Object"
+                },
+                {
+                    "name": "tips",
+                    "description": "默认值：true。是否出现“数据提交中”，\"请勿重复提交数据\"等半透明底弹出框提示语。",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Ajax",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\loadingDoc.js",
+            "line": 20,
+            "description": "图片加载",
+            "itemtype": "method",
+            "name": "Loading",
+            "params": [
+                {
+                    "name": "opt",
+                    "description": "图片加载的相关数据设置<br>imgUrl 图片链接数组<br>defau 是否使用默认加载样式，默认为true<br>loadColor  加载页面的背景颜色，默认为“#15191f”<br>srcUrl    加载页面中的加载动画gif/图片链接，不设置时使用默认gif<br>width   自定义加载动画gif/图片的宽度，不设置时默认为“800px”<br>color   加载进度字体颜色，默认为“#fff”<br>loadComplete   加载完成后的操作<br>setLoadingInfo   加载时的操作，参数progress为加载进度",
+                    "type": "Object"
+                }
+            ],
+            "class": "Loading",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\screenFit.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-12-22",
+            "class": "ScreenFit",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\screenFit.js",
+            "line": 20,
+            "description": "初始化类",
+            "itemtype": "method",
+            "name": "ScreenFit",
+            "params": [
+                {
+                    "name": "sw",
+                    "description": "默认值：1920。背景宽度。",
+                    "type": "Number"
+                },
+                {
+                    "name": "sh",
+                    "description": "默认值：1080。背景高度。",
+                    "type": "Number"
+                }
+            ],
+            "class": "ScreenFit",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\screenFit.js",
+            "line": 40,
+            "description": "返回缩放比例：0-100",
+            "itemtype": "method",
+            "name": "scale",
+            "class": "ScreenFit",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\screenFit.js",
+            "line": 53,
+            "description": "返回页面元素经过自适应后的正确X坐标",
+            "itemtype": "method",
+            "name": "getX",
+            "params": [
+                {
+                    "name": "getX",
+                    "description": "元素在设计稿中的元素X坐标(left)。",
+                    "type": "Number"
+                }
+            ],
+            "class": "ScreenFit",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\screenFit.js",
+            "line": 67,
+            "description": "返回页面元素经过自适应后的正确Y坐标",
+            "itemtype": "method",
+            "name": "getY",
+            "params": [
+                {
+                    "name": "getY",
+                    "description": "元素在设计稿中的元素Y坐标(top)。",
+                    "type": "Number"
+                }
+            ],
+            "class": "ScreenFit",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\share.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-11-23",
+            "class": "Share",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\share.js",
+            "line": 21,
+            "description": "微信分享初始化",
+            "itemtype": "method",
+            "name": "Share",
+            "params": [
+                {
+                    "name": "wxTonken",
+                    "description": "获取微信token的链接。如：'http://www.xxx.cn/weixin/jssdk/sample.php'",
+                    "type": "String"
+                },
+                {
+                    "name": "config",
+                    "description": "微信相关数据设置，详情请见示例。",
+                    "type": "Object"
+                }
+            ],
+            "class": "Share",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\share.js",
+            "line": 48,
+            "description": "分享给朋友",
+            "itemtype": "property",
+            "name": "appmessage",
+            "class": "Share",
+            "module": "data",
+            "subprops": [
+                {
+                    "name": "title",
+                    "description": "微信分享标题",
+                    "type": "String"
+                },
+                {
+                    "name": "img_url",
+                    "description": "微信分享图片链接",
+                    "type": "String"
+                },
+                {
+                    "name": "desc",
+                    "description": "微信分享内容",
+                    "type": "String"
+                },
+                {
+                    "name": "success",
+                    "description": "用户确认分享后执行的回调函数，默认为空",
+                    "type": "Function"
+                },
+                {
+                    "name": "cancel",
+                    "description": "用户取消分享后执行的回调函数，默认为空",
+                    "type": "Function"
+                }
+            ]
+        },
+        {
+            "file": "scr\\data\\share.js",
+            "line": 71,
+            "description": "分享到朋友圈",
+            "itemtype": "property",
+            "name": "timeline",
+            "class": "Share",
+            "module": "data",
+            "subprops": [
+                {
+                    "name": "title",
+                    "description": "微信分享标题",
+                    "type": "String"
+                },
+                {
+                    "name": "img_url",
+                    "description": "微信分享图片链接",
+                    "type": "String"
+                },
+                {
+                    "name": "desc",
+                    "description": "微信分享内容",
+                    "type": "String"
+                },
+                {
+                    "name": "success",
+                    "description": "用户确认分享后执行的回调函数，默认为空",
+                    "type": "Function"
+                },
+                {
+                    "name": "cancel",
+                    "description": "用户取消分享后执行的回调函数，默认为空",
+                    "type": "Function"
+                }
+            ]
+        },
+        {
+            "file": "scr\\data\\submit.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-12-20",
+            "class": "Submit",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\submit.js",
+            "line": 20,
+            "description": "数据提交，只需要设置相应属性便可提交。自带检测姓名手机号码",
+            "itemtype": "method",
+            "name": "Submit",
+            "params": [
+                {
+                    "name": "myUrl",
+                    "description": "发送请求的地址",
+                    "type": "String"
+                },
+                {
+                    "name": "mySuccess",
+                    "description": "请求成功后的回调函数。",
+                    "type": "Function"
+                },
+                {
+                    "name": "mydata",
+                    "description": "发送到服务器的数据。对name进行中文名验证，对phone进行手机号码 验证，对age进行年龄验证，对email进行邮箱地址验证，对idCard进行身份证号验证。",
+                    "type": "Object"
+                },
+                {
+                    "name": "mytype",
+                    "description": "默认值: \"GET\"。请求方式 (\"POST\" 或 \"GET\")。",
+                    "type": "String"
+                },
+                {
+                    "name": "tips",
+                    "description": "默认值：true。是否出现“数据提交中”，\"请勿重复提交数据\"等半透明底弹出框提示语。",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "other",
+                    "description": "设置ajax其他参数，该属性优先级最高。",
+                    "type": "Object"
+                }
+            ],
+            "class": "Submit",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-11-18",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 20,
+            "description": "去除两端空格",
+            "itemtype": "method",
+            "name": "lrtrim",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 29,
+            "description": "去除所有空格",
+            "itemtype": "method",
+            "name": "trim",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 37,
+            "description": "截取左边count个字符",
+            "itemtype": "method",
+            "name": "left",
+            "params": [
+                {
+                    "name": "count",
+                    "description": "截取的字符",
+                    "type": "String"
+                }
+            ],
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 45,
+            "description": "截取右边count个字符",
+            "itemtype": "method",
+            "name": "right",
+            "params": [
+                {
+                    "name": "count",
+                    "description": "截取的字符",
+                    "type": "String"
+                }
+            ],
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 53,
+            "description": "计算中文字符串的长度，两个英文符号算一个长度。",
+            "itemtype": "method",
+            "name": "zhLength",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 60,
+            "description": "验证字符串是否为合法的手机号码",
+            "itemtype": "method",
+            "name": "checkMoblie",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 68,
+            "description": "验证字符串是否为合法的身份证号码",
+            "itemtype": "method",
+            "name": "checkIdCardNo",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 76,
+            "description": "验证字符串是否为合法的邮政编码",
+            "itemtype": "method",
+            "name": "checkZipCode",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 84,
+            "description": "验证字符串是否为合法的电子邮箱地址",
+            "itemtype": "method",
+            "name": "checkEmail",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 92,
+            "description": "获得文件路径中的文件扩展名，可用于文件类型的判断",
+            "itemtype": "method",
+            "name": "getFileExt",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 100,
+            "description": "将字符串本身复制limit次后返回一个新的字符串",
+            "itemtype": "method",
+            "name": "copy",
+            "params": [
+                {
+                    "name": "limit",
+                    "description": "复制的次数",
+                    "type": "Int"
+                }
+            ],
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 113,
+            "description": "将字符串本身以“,”分离，并为每个字符加上开标签",
+            "itemtype": "method",
+            "name": "openLabel",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 122,
+            "description": "将字符串本身以“,”分离，并为每个字符加上闭合标签",
+            "itemtype": "method",
+            "name": "closeLabel",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 143,
+            "description": "将一维数组中的数据构建成表格形式",
+            "numofrow": ":每一行要展示的数据数量；@rowLabel:行标签,如:tr;@cellLabel:单元格标签,如:td;@filled:true/false,不满一行是否要填充",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlarge.js",
+            "line": 163,
+            "description": "打乱一维数组中数据的顺序",
+            "class": "String",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlargeDocArray.js",
+            "line": 18,
+            "description": "将一维数组中的数据构建成表格形式",
+            "itemtype": "method",
+            "name": "buildTable",
+            "params": [
+                {
+                    "name": "numOfRow",
+                    "description": "每一行要展示的数据数量",
+                    "type": "Int"
+                },
+                {
+                    "name": "rowLabel",
+                    "description": "行标签",
+                    "type": "String"
+                },
+                {
+                    "name": "cellLabel",
+                    "description": "单元格标签",
+                    "type": "String"
+                },
+                {
+                    "name": "filled",
+                    "description": "不满一行是否要填充",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Array",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlargeDocArray.js",
+            "line": 27,
+            "description": "打乱一维数组中数据的顺序",
+            "itemtype": "method",
+            "name": "mix",
+            "class": "Array",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlargeDocArray.js",
+            "line": 32,
+            "description": "返回是不是数组",
+            "itemtype": "method",
+            "name": "isArray",
+            "params": [
+                {
+                    "name": "arg",
+                    "description": "数组变量名",
+                    "type": "String"
+                }
+            ],
+            "class": "Array",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlargeDocNumber.js",
+            "line": 18,
+            "description": "数字补位操作",
+            "itemtype": "method",
+            "name": "numCards",
+            "params": [
+                {
+                    "name": "count",
+                    "description": "数字前补count位的数字",
+                    "type": "Int"
+                },
+                {
+                    "name": "separater",
+                    "description": "每位数字加上separater标签，默认为空",
+                    "type": "String"
+                },
+                {
+                    "name": "frontChar",
+                    "description": "补位的数字的值，默认为0",
+                    "type": "Int"
+                }
+            ],
+            "class": "Number",
+            "module": "data"
+        },
+        {
+            "file": "scr\\data\\typeEnlargeDocNumber.js",
+            "line": 26,
+            "description": "保存小数点",
+            "itemtype": "method",
+            "name": "numPoints",
+            "params": [
+                {
+                    "name": "separater",
+                    "description": "保留separater位小数点",
+                    "type": "Int"
+                }
+            ],
+            "class": "Number",
+            "module": "data"
+        },
+        {
+            "file": "scr\\display\\graphicalDoc.js",
+            "line": 16,
+            "description": "绘制线条",
+            "itemtype": "method",
+            "name": "createLine",
+            "params": [
+                {
+                    "name": "cxt",
+                    "description": "面向的画布",
+                    "type": "Function|String"
+                },
+                {
+                    "name": "pointA",
+                    "description": "第一个点的x，y坐标。默认：x:100,y:100",
+                    "type": "Object"
+                },
+                {
+                    "name": "pointB",
+                    "description": "第二个点的x，y坐标。默认：x:200,y:200",
+                    "type": "Object"
+                },
+                {
+                    "name": "lineWidth",
+                    "description": "线的宽度，默认：1",
+                    "type": "Int"
+                },
+                {
+                    "name": "rgb",
+                    "description": "线条颜色，默认：rgba(255,255,255,1)",
+                    "type": "String"
+                }
+            ],
+            "class": "Graphical",
+            "module": "display"
+        },
+        {
+            "file": "scr\\display\\graphicalDoc.js",
+            "line": 26,
+            "description": "绘制圆点",
+            "itemtype": "method",
+            "name": "createPoint",
+            "params": [
+                {
+                    "name": "cxt",
+                    "description": "面向的画布",
+                    "type": "Function|String"
+                },
+                {
+                    "name": "point",
+                    "description": "圆点坐标。默认：x:100,y:100",
+                    "type": "Object"
+                },
+                {
+                    "name": "r",
+                    "description": "圆点的半径。默认5",
+                    "type": "Int"
+                },
+                {
+                    "name": "fillrgba",
+                    "description": "填充颜色，默认：rgba(255,255,255,1)",
+                    "type": "String"
+                },
+                {
+                    "name": "lineWidth",
+                    "description": "边宽度，默认：1",
+                    "type": "Int"
+                },
+                {
+                    "name": "strokergba",
+                    "description": "边框颜色，默认：rgba(255,255,255,1)",
+                    "type": "String"
+                }
+            ],
+            "class": "Graphical",
+            "module": "display"
+        },
+        {
+            "file": "scr\\display\\graphicalDoc.js",
+            "line": 37,
+            "description": "绘制圆角矩形",
+            "itemtype": "method",
+            "name": "createCurve",
+            "params": [
+                {
+                    "name": "cxt",
+                    "description": "面向的画布",
+                    "type": "Function|String"
+                },
+                {
+                    "name": "point",
+                    "description": "格式为：x:100,y:100",
+                    "type": "Object"
+                },
+                {
+                    "name": "wh",
+                    "description": "矩形的长宽，默认：w:200,h:100",
+                    "type": "Object"
+                },
+                {
+                    "name": "fillrgba",
+                    "description": "填充颜色，默认：rgba(255,255,255,1)",
+                    "type": "String"
+                },
+                {
+                    "name": "Fillet",
+                    "description": "圆角，默认0",
+                    "type": "Int"
+                },
+                {
+                    "name": "lineWidth",
+                    "description": "边宽度，默认：1",
+                    "type": "Int"
+                },
+                {
+                    "name": "strokergba",
+                    "description": "边框颜色，默认：rgba(255,255,255,1)",
+                    "type": "String"
+                }
+            ],
+            "class": "Graphical",
+            "module": "display"
+        },
+        {
+            "file": "scr\\display\\pcTips.js",
+            "line": 1,
+            "description": "Author:tina\nDATE: 2016-11-22",
+            "class": "PcTips",
+            "module": "display"
+        },
+        {
+            "file": "scr\\display\\pcTipsDoc.js",
+            "line": 18,
+            "description": "pc端口 访问 h5页面时，出现h5二维码提示用户移动端访问",
+            "itemtype": "method",
+            "name": "PcTips",
+            "params": [
+                {
+                    "name": "link",
+                    "description": "二维码中间的小图片，尺寸为29*29px.默认为微信图标",
+                    "type": "String"
+                }
+            ],
+            "class": "PcTips",
+            "module": "display"
+        },
+        {
+            "file": "scr\\media\\soundBtn.js",
+            "line": 1,
+            "description": "Author:hy\nDATE: 2016-11-21",
+            "class": "SoundBtn",
+            "module": "display"
+        },
+        {
+            "file": "scr\\media\\soundBtnDoc.js",
+            "line": 18,
+            "description": "音乐按钮",
+            "itemtype": "method",
+            "name": "soundBtn",
+            "params": [
+                {
+                    "name": "opt",
+                    "description": "图片加载的相关数据设置<br>id 背景音乐模块的id，可以对此id做相应的样式，无需在页面中写入此id；此音乐模块会插入到body中。<br> src 背景音乐的链接。<br>onImg  音乐播放时的播放按钮图片链接，不设置时使用默认按钮图片。<br>offImg    音乐暂停时的暂停按钮图片链接，不设置时使用默认按钮图片。<br>styleCss   是否使用默认的播放按钮图片的动画效果，类型：boolean;默认为true，动画效果为顺时针旋转。<br>className   自定义播放时的图片的动画的类名，仅在styleCss=false时生效。<br>autoPlay   背景音乐是否自动播放，类型：boolean;默认为true，即自动播放。",
+                    "type": "Object"
+                }
+            ],
+            "class": "SoundBtn",
+            "module": "media"
+        },
+        {
+            "file": "scr\\media\\soundBtnDoc.js",
+            "line": 24,
+            "description": "播放音乐",
+            "itemtype": "method",
+            "name": "play",
+            "class": "SoundBtn",
+            "module": "media"
+        },
+        {
+            "file": "scr\\media\\soundBtnDoc.js",
+            "line": 29,
+            "description": "暂停音乐",
+            "itemtype": "method",
+            "name": "pause",
+            "class": "SoundBtn",
+            "module": "media"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\control\\browserDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\control\\browserDoc.js:6"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\control\\browserDoc.js:6"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\control\\deviceJumpDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\control\\deviceJumpDoc.js:6"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\control\\deviceJumpDoc.js:6"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\control\\orientationTipDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\control\\orientationTipDoc.js:6"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\control\\orientationTipDoc.js:6"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\ajaxDoc.js:10"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\ajaxDoc.js:10"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\ajaxDoc.js:10"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\loadingDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\loadingDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\loadingDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\loadingDoc.js:6"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\loadingDoc.js:6"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\screenFit.js:10"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\screenFit.js:10"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\screenFit.js:10"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\share.js:11"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\share.js:11"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\share.js:11"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\submit.js:10"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\submit.js:10"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\submit.js:10"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\typeEnlarge.js:10"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\typeEnlarge.js:10"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\typeEnlarge.js:10"
+        },
+        {
+            "message": "unknown tag: numofrow",
+            "line": " scr\\data\\typeEnlarge.js:143"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\typeEnlargeDocArray.js:7"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\typeEnlargeDocArray.js:7"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\typeEnlargeDocArray.js:7"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\data\\typeEnlargeDocNumber.js:7"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\data\\typeEnlargeDocNumber.js:7"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\data\\typeEnlargeDocNumber.js:7"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\display\\graphicalDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\display\\graphicalDoc.js:6"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\display\\graphicalDoc.js:6"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\display\\pcTipsDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\display\\pcTipsDoc.js:6"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\display\\pcTipsDoc.js:6"
+        },
+        {
+            "message": "unknown tag: content",
+            "line": " scr\\media\\soundBtnDoc.js:6"
+        },
+        {
+            "message": "unknown tag: demo",
+            "line": " scr\\media\\soundBtnDoc.js:6"
+        },
+        {
+            "message": "unknown tag: show",
+            "line": " scr\\media\\soundBtnDoc.js:6"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-11-18",
+            "line": " scr\\control\\browser.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-11-18",
+            "line": " scr\\control\\deviceJump.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-11-18",
+            "line": " scr\\control\\orientationTip.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-12-20",
+            "line": " scr\\data\\ajax.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-12-20",
+            "line": " scr\\data\\ajaxDoc.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-12-22",
+            "line": " scr\\data\\screenFit.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-11-23",
+            "line": " scr\\data\\share.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-12-20",
+            "line": " scr\\data\\submit.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-11-18",
+            "line": " scr\\data\\typeEnlarge.js:1"
+        },
+        {
+            "message": "Missing item type\n将一维数组中的数据构建成表格形式",
+            "line": " scr\\data\\typeEnlarge.js:143"
+        },
+        {
+            "message": "Missing item type\n打乱一维数组中数据的顺序",
+            "line": " scr\\data\\typeEnlarge.js:163"
+        },
+        {
+            "message": "Missing item type\nAuthor:tina\nDATE: 2016-11-22",
+            "line": " scr\\display\\pcTips.js:1"
+        },
+        {
+            "message": "Missing item type\nAuthor:hy\nDATE: 2016-11-21",
+            "line": " scr\\media\\soundBtn.js:1"
+        }
+    ]
+}
