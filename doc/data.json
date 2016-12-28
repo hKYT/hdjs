@@ -3,7 +3,7 @@
         "name": "HDjs",
         "description": "<h2>HDjs</h2> <p>互动中心技术部前端代码库</p><p>合成zepto，整个库少于70k，比jq小</p><h4>不影响日常开发习惯，以前是怎么写怎么写,只是写的代码量少了</h4><p>基础代码统一，保证项目出品质量</p><p>具备功能:</p><p>Browser:判断浏览器是否是移动端浏览器及是否在微信中打开网页 [ 项目必备 ]</p><p>DeviceJump:依赖于brower，识别浏览器设备，跳转到相应网页 [ 项目必备 ]</p><p>OrientationTip:设备观看方向提示。如横屏提示，竖屏提示 [ 项目必备 ]</p><p>Ajax:Ajax模块 [ 项目必备 ]</p><p>Submit:提交模块 [ 项目必备 ]</p><p>Loading:图片加载 [ 项目必备 ]</p><p>Share:微信分享 [ 项目必备 ]</p><p>String:字符串方法扩展</p><p>Array:数组方法扩展</p><p>Number:数字方法扩展</p><p>Graphical:支持绘制 canvas 线，圆点，圆角矩形等</p><p>PcTips:pc端口 访问 h5页面时，出现h5二维码提示用户移动端访问 [ 项目必备 ]</p><p>SoundBtn:音乐按钮 [ 项目必备 ]</p>",
         "version": "1.1.0",
-        "url": "https://github.com/tina0152/HDjs/"
+        "url": "https://github.com/hKYT/hdjs/"
     },
     "files": {
         "scr\\control\\browser.js": {
