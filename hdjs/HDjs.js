@@ -8,7 +8,7 @@
     transitionProperty, transitionDuration, transitionTiming, transitionDelay,
     animationName, animationDuration, animationTiming, animationDelay,
     cssReset = {}
-
+//todo
   function dasherize(str) { return str.replace(/([A-Z])/g, '-$1').toLowerCase() }
   function normalizeEvent(name) { return eventPrefix ? eventPrefix + name : name.toLowerCase() }
 
